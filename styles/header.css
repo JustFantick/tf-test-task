@@ -1,0 +1,47 @@
+.header {
+	padding: clamp(10px, 15px, 20px);
+	position: relative;
+}
+
+/* blured background area to highlight dark Logo & nav items */
+.header::before {
+	content: '';
+	position: absolute;
+	top: -20%;
+	left: 0;
+	z-index: -1;
+
+	width: 100%;
+	height: 150%;
+	background-color: rgb(123, 132, 134);
+	filter: blur(75px);
+}
+
+@media (max-width: 768px) {
+	.header__body::before {
+		background-color: rgb(180, 186, 187);
+	}
+}
+
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: clamp(14px, 25px, 40px);
+
+}
+
+.logo picture img {
+	max-height: clamp(36px, 55px, 80px);
+	object-fit: contain;
+}
+
+.nav-list {
+	display: flex;
+	gap: 20px;
+}

@@ -11,6 +11,7 @@
 	<link rel="manifest" href="./imgs/favicon/site.webmanifest">
 
 	<link rel="stylesheet" href="./styles/general.css">
+	<link rel="stylesheet" href="./styles/header.css">
 	<script src="./js/script.js" defer></script>
 	<title>FitBit</title>
 </head>
@@ -27,6 +28,37 @@
 
 		<div class="wrapper__content">
 			<header class="header">
+				<div class="header__body __container">
+					<div class="logo">
+						<picture>
+							<source srcset="./imgs/non-optimized/logo_mb.png" type="image/jpeg" media="(max-width: 1024px)">
+							<source srcset="./imgs/non-optimized/logo_pc.png" type="image/jpeg" media="(min-width: 1024px)">
+							<img src="./imgs/non-optimized/logo_mb.png" alt="logo">
+						</picture>
+
+						<picture>
+							<source srcset="./imgs/non-optimized/brandname_mb.png" type="image/jpeg"
+								media="(max-width: 1024px)">
+							<source srcset="./imgs/non-optimized/brandname_pc.png" type="image/jpeg"
+								media="(min-width: 1024px)">
+							<img src="./imgs/non-optimized/brandname_mb.png" alt="brandname">
+						</picture>
+					</div>
+
+					<nav class="header__nav">
+						<ul class="nav-list">
+							<li class="nav-list__item">
+								<a href="#"><img src="./imgs/svgs/location.svg" alt="location-svg"></a>
+							</li>
+							<li class="nav-list__item">
+								<a href="#"><img src="./imgs/svgs/user.svg" alt="user-svg"></a>
+							</li>
+							<li class="nav-list__item">
+								<a href="#"><img src="./imgs/svgs/basket.svg" alt="basket-svg"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 
 			</header>
 
