@@ -13,6 +13,45 @@ body,
 html {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 16px;
+	color: var(--text-color-primary);
+}
+
+.wrapper {
+	min-height: 100vh;
+	min-height: 100dvh;
+	max-width: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.wrapper__content {
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+}
+
+.wrapper__content .main {
+	flex: 1 1 auto;
+}
+
+.wrapper>picture img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+[class*="__container"] {
+	max-width: 1710px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 h1 {
