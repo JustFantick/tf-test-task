@@ -29,6 +29,7 @@ html {
 }
 
 .wrapper__content {
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
 	z-index: 10;
