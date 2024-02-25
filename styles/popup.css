@@ -27,3 +27,13 @@
 .choise-popup__gift-box {
 	width: clamp(122px, calc(30.9px + 10.9vw), 292px);
 }
+
+/* Error popup */
+.error-popup {
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
