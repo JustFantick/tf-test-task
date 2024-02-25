@@ -1,0 +1,29 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100vh;
+	height: 100dvh;
+	width: 100%;
+	background-color: var(--popup-background-color);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup__body {
+	text-align: center;
+	padding: 15px;
+}
+
+/* Choise Popup */
+.choise-popup>*:not(:first-child) {
+	margin-top: clamp(24px, calc(11.9px + 0.71vw), 35px);
+}
+
+.choise-popup__gift-box {
+	width: clamp(122px, calc(30.9px + 10.9vw), 292px);
+}
