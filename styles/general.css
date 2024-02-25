@@ -40,6 +40,13 @@ html {
 
 .wrapper__content .main {
 	flex: 1 1 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.main>* {
+	flex: 1 1 auto;
 }
 
 .wrapper>picture img {
@@ -61,18 +68,21 @@ html {
 h1 {
 	/* diapason: 36-64px */
 	font-size: clamp(2.25rem, calc(1.85rem + 1.79vw), 4rem);
+	font-weight: bold;
 }
 
 h2 {
 	/* diapason: 24-48px */
 	font-size: clamp(1.5rem, calc(1.15rem + 1.54vw), 3rem);
 	line-height: 135%;
+	font-weight: bold;
 }
 
 h3 {
 	/* diapason: 20-40px */
 	font-size: clamp(1.25rem, calc(0.96rem + 1.28vw), 2.5rem);
 	line-height: 135%;
+	font-weight: bold;
 }
 
 p {
