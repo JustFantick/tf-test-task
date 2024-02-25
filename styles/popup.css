@@ -37,3 +37,17 @@
 	align-items: center;
 	gap: 10px;
 }
+
+/* Congrats popup */
+.congrats-popup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(16px, calc(12.8px + 0.9vw), 30px);
+}
+
+.congrats-popup h3,
+.congrats-popup button {
+	margin-top: clamp(5px, calc(1.6px + 0.96vw), 20px);
+}
