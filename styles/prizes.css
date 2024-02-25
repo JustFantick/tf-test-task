@@ -1,0 +1,57 @@
+.prizes-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	column-gap: clamp(26px, calc(-7.2px + 9.23vw), 170px);
+	row-gap: clamp(36.8px, calc(17.76px + 5.28vw), 100px);
+}
+
+@media (max-width: 740px) {
+	.prizes-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 360px) {
+	.prizes-grid {
+		column-gap: clamp(7px, calc(3vw + 2px), 15px);
+	}
+}
+
+.prize-item {
+	width: clamp(89px, calc(72.8px + 5.06vw), 170px);
+	aspect-ratio: 170 / 189;
+
+	position: relative;
+}
+
+@media (min-width: 1024px) {
+	.prize-item {
+		width: 170px;
+	}
+}
+
+.prize-item img {
+	position: absolute;
+	left: 0;
+
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.prize-item__box {
+	bottom: 0;
+	z-index: 12;
+}
+
+.prize-item__top {
+	top: 16%;
+	/* 16% = closed, 0 = opened */
+	z-index: 13;
+
+	transition: all 0.3s ease;
+}
+
+.prize-item.open .prize-item__top {
+	top: 0;
+}
