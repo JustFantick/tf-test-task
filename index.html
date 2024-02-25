@@ -13,9 +13,10 @@
 	<link rel="stylesheet" href="./styles/general.css">
 	<link rel="stylesheet" href="./styles/header.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/home.css">
+	<link rel="stylesheet" href="./styles/loading.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-	<link rel="stylesheet" href="./styles/home.css">
 	<script src="./js/script.js" defer></script>
 	<title>FitBit</title>
 </head>
@@ -136,6 +137,23 @@
 					</div>
 
 				</div>
+
+				<template id="loader">
+					<div class="loading __container">
+						<h2 class="loading__title">Ihre Antworten werden überprüft</h2>
+
+						<div class="loading__paragraphs">
+							<p>Sie haben 3/3 der Fragen beantwortet!</p>
+							<p>Es gibt keine vorläufigen Erhebungen über Ihr IP</p>
+							<p>Geschenke werden geladen.</p>
+						</div>
+
+						<img class="loading__loader-img" src="./imgs/non-optimized/loader.png" alt="loader-img">
+
+						<p class="highlighted">Laden...</p>
+					</div>
+				</template>
+
 			</main>
 
 		</div>
