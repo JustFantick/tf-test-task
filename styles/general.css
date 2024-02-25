@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:regular,700);
+@import url(header.css);
 
 :root {
 	--text-color-primary: #F4F4F4;
