@@ -1,7 +1,7 @@
 .header {
 	padding: clamp(10px, 15px, 20px);
 	position: relative;
-	margin-bottom: clamp(20, calc(28.07px + 3.41vw), 48px);
+	margin-bottom: clamp(20px, calc(13.6px + 1.79vw), 48px);
 }
 
 /* blured background area to highlight dark Logo & nav items */
