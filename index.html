@@ -166,26 +166,29 @@
 				</template>
 
 				<template id="choise-popup">
-					<div class="popup">
+					<div class="popup fade-out-anim" style="--anim-order: 1;">
 						<div class="popup__body choise-popup">
 							<picture>
 								<source srcset="./imgs/non-optimized/box_pc.png" type="image/png" media="(min-width: 768px)">
 								<source srcset="./imgs/non-optimized/box_mb.png" type="image/png" media="(max-width: 768px)">
-								<img class="choise-popup__gift-box" src="./imgs/non-optimized/box_mb.png" alt="box-img">
+								<img class="choise-popup__gift-box fade-out-anim" style="--anim-order: 1;"
+									src="./imgs/non-optimized/box_mb.png" alt="box-img">
 							</picture>
 
-							<div class="choise-popup__title">
+							<div class="choise-popup__title slide-left-anim" style="--anim-order: 2;">
 								<p class="highlighted">
 									Herzlichen Glückwunsch, <br>
 									Sie haben erfolgreich überprüft, dass Sie eine echte Person sind.
 								</p>
 							</div>
 
-							<p>Hoje, 13 de junho, tem a oportunidade de obter uma mala Samsonite.</p>
-							<p>Tudo o que precisa é de escolher a caixa de oferta certa.</p>
-							<p>Tens 3 tentativas, boa sorte!</p>
+							<p class="slide-left-anim" style="--anim-order: 3;">Hoje, 13 de junho, tem a oportunidade de obter
+								uma mala Samsonite.</p>
+							<p class="slide-left-anim" style="--anim-order: 4;">Tudo o que precisa é de escolher a caixa de
+								oferta certa.</p>
+							<p class="slide-left-anim" style="--anim-order: 5;">Tens 3 tentativas, boa sorte!</p>
 
-							<button type="button" class="button">ok</button>
+							<button style="--anim-order: 6;" type="button" class="button scale-anim">ok</button>
 						</div>
 
 					</div>
