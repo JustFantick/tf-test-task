@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="./styles/home.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./styles/loading.css">
+	<link rel="stylesheet" href="./styles/prizes.css">
 	<link rel="stylesheet" href="./styles/popup.css">
 	<link rel="stylesheet" href="./styles/anim.css">
 
@@ -191,6 +192,55 @@
 							<button style="--anim-order: 6;" type="button" class="button scale-anim">ok</button>
 						</div>
 
+					</div>
+				</template>
+
+				<template id="prizes-grid">
+					<div class="prizes-grid __container"></div>
+				</template>
+
+				<template id="prize-item">
+					<div class="prize-item">
+						<img class="prize-item__top" src="./imgs/non-optimized/box-2.png" alt="box-1-img">
+						<img class="prize-item__box" src="./imgs/non-optimized/box-1.png" alt="box-2-img">
+					</div>
+				</template>
+
+				<template id="error-popup">
+					<div class="popup fade-out-anim" style="--anim-order: 1;">
+						<div class="popup__body error-popup">
+							<h1 class="slide-left-anim" style="--anim-order: 2;">OHHH...</h1>
+							<p class="slide-left-anim" style="--anim-order: 3;">
+								Tut mir leid, aber dieses Geschenk ist leer! Du
+								hast (2) weitere Versuche. Viel Glück!
+							</p>
+							<button type="button" class="button scale-anim" style="--anim-order: 4;">ok</button>
+
+						</div>
+
+					</div>
+				</template>
+
+				<template id="congrats-popup">
+					<div class="popup fade-out-anim" style="--anim-order: 1;">
+						<div class="popup__body congrats-popup">
+							<img src="./imgs/non-optimized/apple-watch-blue-mb.png" alt="apple-watch-blue-img"
+								class="fade-out-anim" style="--anim-order: 2;">
+							<h3 class="slide-left-anim" style="--anim-order: 2;">Congratulations! You won!</h3>
+							<p class="highlighted slide-left-anim" style="--anim-order: 3;">
+								You won baby car seat Maxi-Cosi
+								Pebble 360!
+							</p>
+							<ol>
+								<li class="slide-left-anim" style="--anim-order: 4;">1. Click "OK" below in order to go to the
+									shipping checkout page.</li>
+								<li class="slide-left-anim" style="--anim-order: 5;">2. Fill out the form and pay for order to
+									receive Maxi-Cosi Pebble 360.</li>
+								<li class="slide-left-anim" style="--anim-order: 6;">3. The package will be delivered within 5-7
+									days.</li>
+							</ol>
+							<button type="button" class="button scale-anim" style="--anim-order: 7;">ok</button>
+						</div>
 					</div>
 				</template>
 
