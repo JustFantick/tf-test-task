@@ -86,9 +86,11 @@
 	}
 }
 
-.wrapper.close-anim .scale-anim,
-.wrapper.close-anim .fade-out-anim,
-.wrapper.close-anim .slide-left-anim {
+/* Aditional class "once" disable block's repeat animation
+ when .wrapper gots .close-anim */
+.wrapper.close-anim .scale-anim:not(.once),
+.wrapper.close-anim .fade-out-anim:not(.once),
+.wrapper.close-anim .slide-left-anim:not(.once) {
 	animation-name: fade-in-anim;
 	animation-duration: 0.1s;
 	animation-delay: 0s;
