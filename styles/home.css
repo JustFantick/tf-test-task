@@ -79,12 +79,14 @@
 	--gap: 30px;
 }
 
-.question-section__buttons button {
-	flex: 0 0 calc(50% + var(--gap));
+.question-section__buttons>* {
+	flex: 0 0 calc(50%);
+	display: flex;
 }
 
 .question-button-left,
 .question-button-right {
+	flex: 1 1 auto;
 	padding: 14px;
 	background-color: var(--accent-color-primary);
 	text-transform: uppercase;
@@ -115,11 +117,12 @@
 	}
 
 	.question-button-left:hover {
-		transform: scale(1.05) translateX(10px);
+		transform: scale(1.05) translateX(10px) !important;
+		transition: transform 0.3s ease;
 	}
 
 	.question-button-right:hover {
-		transform: scale(1.05) translateX(-10px);
+		transform: scale(1.05) translateX(-10px) !important;
 	}
 }
 
