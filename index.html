@@ -26,10 +26,9 @@
 <body>
 	<div class="wrapper">
 		<picture>
-			<source srcset="./imgs/non-optimized/bcg360.png" type="image/jpeg" media="(max-width: 570px)">
-			<source srcset="./imgs/non-optimized/bcg1440.png" type="image/jpeg" media="(max-width: 1440px)">
-			<source srcset="./imgs/non-optimized/bcg1920.png" type="image/jpeg" media="(min-width: 1440px)">
-
+			<source srcset="./imgs/optimized/bcg360.webp" type="image/webp" media="(max-width: 570px)">
+			<source srcset="./imgs/optimized/bcg1440.webp" type="image/webp" media="(max-width: 1440px)">
+			<source srcset="./imgs/optimized/bcg1920.webp" type="image/webp" media="(min-width: 1440px)">
 			<img src="./imgs/non-optimized/bcg1440.png" alt="bgc-image">
 		</picture>
 
@@ -38,16 +37,14 @@
 				<div class="header__body __container">
 					<div class="logo">
 						<picture>
-							<source srcset="./imgs/non-optimized/logo_mb.png" type="image/jpeg" media="(max-width: 1024px)">
-							<source srcset="./imgs/non-optimized/logo_pc.png" type="image/jpeg" media="(min-width: 1024px)">
+							<source srcset="./imgs/optimized/logo_mb.webp" type="image/webp" media="(max-width: 1024px)">
+							<source srcset="./imgs/optimized/logo_pc.webp" type="image/webp" media="(min-width: 1024px)">
 							<img src="./imgs/non-optimized/logo_mb.png" alt="logo">
 						</picture>
 
 						<picture>
-							<source srcset="./imgs/non-optimized/brandname_mb.png" type="image/jpeg"
-								media="(max-width: 1024px)">
-							<source srcset="./imgs/non-optimized/brandname_pc.png" type="image/jpeg"
-								media="(min-width: 1024px)">
+							<source srcset="./imgs/optimized/brandname_mb.webp" type="image/webp" media="(max-width: 1024px)">
+							<source srcset="./imgs/optimized/brandname_pc.webp" type="image/webp" media="(min-width: 1024px)">
 							<img src="./imgs/non-optimized/brandname_mb.png" alt="brandname">
 						</picture>
 					</div>
@@ -87,32 +84,38 @@
 							<div class="swiper fullsize-swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-pink-mb.png" alt="apple-watch-pink-img">
+										<picture>
+											<source srcset="./imgs/optimized/apple-watch-pink-pc.webp" type="image/webp"
+												media="(min-width: 1024px)">
+											<source srcset="./imgs/optimized/apple-watch-pink-mb.webp" type="image/webp"
+												media="(max-width: 1024px)">
+											<img src="./imgs/optimized/apple-watch-pink-mb.webp" alt="apple-watch-pink-img">
+										</picture>
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-red-mb.png" alt="apple-watch-red-img">
+										<img src="./imgs/optimized/apple-watch-red-mb.webp" alt="apple-watch-red-img">
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-black-mb.png" alt="apple-watch-black-img">
+										<img src="./imgs/optimized/apple-watch-black-mb.webp" alt="apple-watch-black-img">
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-blue-mb.png" alt="apple-watch-blue-img">
+										<img src="./imgs/optimized/apple-watch-blue-mb.webp" alt="apple-watch-blue-img">
 									</div>
 								</div>
 							</div>
 							<div class="swiper mini-swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-pink-mb.png" alt="apple-watch-pink-img">
+										<img src="./imgs/optimized/apple-watch-pink-mb.webp" alt="apple-watch-pink-img">
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-red-mb.png" alt="apple-watch-red-img">
+										<img src="./imgs/optimized/apple-watch-red-mb.webp" alt="apple-watch-red-img">
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-black-mb.png" alt="apple-watch-black-img">
+										<img src="./imgs/optimized/apple-watch-black-mb.webp" alt="apple-watch-black-img">
 									</div>
 									<div class="swiper-slide">
-										<img src="./imgs/non-optimized/apple-watch-blue-mb.png" alt="apple-watch-blue-img">
+										<img src="./imgs/optimized/apple-watch-blue-mb.webp" alt="apple-watch-blue-img">
 									</div>
 								</div>
 							</div>
@@ -160,7 +163,7 @@
 							<p>Geschenke werden geladen.</p>
 						</div>
 
-						<img class="loading__loader-img" src="./imgs/non-optimized/loader.png" alt="loader-img">
+						<img class="loading__loader-img" src="./imgs/optimized/loader.webp" alt="loader-img">
 
 						<p class="highlighted slide-left-anim" style="--anim-order: 4;">Laden...</p>
 					</div>
@@ -170,8 +173,8 @@
 					<div class="popup fade-out-anim" style="--anim-order: 1;">
 						<div class="popup__body choise-popup">
 							<picture>
-								<source srcset="./imgs/non-optimized/box_pc.png" type="image/png" media="(min-width: 768px)">
-								<source srcset="./imgs/non-optimized/box_mb.png" type="image/png" media="(max-width: 768px)">
+								<source srcset="./imgs/optimized/box_pc.webp" type="image/webp" media="(min-width: 768px)">
+								<source srcset="./imgs/optimized/box_mb.webp" type="image/webp" media="(max-width: 768px)">
 								<img class="choise-popup__gift-box fade-out-anim" style="--anim-order: 1;"
 									src="./imgs/non-optimized/box_mb.png" alt="box-img">
 							</picture>
@@ -201,8 +204,8 @@
 
 				<template id="prize-item">
 					<div class="prize-item">
-						<img class="prize-item__top" src="./imgs/non-optimized/box-2.png" alt="box-1-img">
-						<img class="prize-item__box" src="./imgs/non-optimized/box-1.png" alt="box-2-img">
+						<img class="prize-item__top" src="./imgs/optimized/box-2.webp" alt="box-1-img">
+						<img class="prize-item__box" src="./imgs/optimized/box-1.webp" alt="box-2-img">
 					</div>
 				</template>
 
@@ -224,7 +227,7 @@
 				<template id="congrats-popup">
 					<div class="popup fade-out-anim" style="--anim-order: 1;">
 						<div class="popup__body congrats-popup">
-							<img src="./imgs/non-optimized/apple-watch-blue-mb.png" alt="apple-watch-blue-img"
+							<img src="./imgs/optimized/apple-watch-blue-mb.webp" alt="apple-watch-blue-img"
 								class="fade-out-anim" style="--anim-order: 2;">
 							<h3 class="slide-left-anim" style="--anim-order: 2;">Congratulations! You won!</h3>
 							<p class="highlighted slide-left-anim" style="--anim-order: 3;">
