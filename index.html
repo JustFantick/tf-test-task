@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./styles/loading.css">
 	<link rel="stylesheet" href="./styles/popup.css">
+	<link rel="stylesheet" href="./styles/anim.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 	<script src="./js/script.js" defer></script>
@@ -70,16 +71,18 @@
 
 			<main class="main">
 				<div class="home __container">
-					<div class="home__description">
+					<div class="home__description delay-container">
 						<div class="description-text">
-							<h1>Congratulations!</h1>
-							<div class="description-text__subtitle">You may take part in the Maxi-Cosi promotion!</div>
-							<p class="description__text">
+							<h1 class="slide-left-anim" style="--anim-order: 1;">Congratulations!</h1>
+							<div class="description-text__subtitle slide-left-anim" style="--anim-order: 2;">
+								You may take part in the Maxi-Cosi promotion!
+							</div>
+							<p class="description__text slide-left-anim" style="--anim-order: 3;">
 								Celebrate Mother's Day with Maxi-Cosi! The company announces the sale
 								of 300 units of Pebble 360 baby car seats for only 2 euros!
 							</p>
 						</div>
-						<div class="description-slider">
+						<div class="description-slider fade-out-anim" style="--anim-order: 4;">
 							<div class="swiper fullsize-swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -118,31 +121,39 @@
 
 					<div class="home__question question-section">
 						<div class="question-section__text">
-							<p>In order to get a promotional</p>
-							<p>
+							<p class="slide-left-anim" style="--anim-order: 5;">In order to get a promotional</p>
+							<p class="slide-left-anim" style="--anim-order: 6;">
 								Maxi-Cosi Pebble 360, please complete the survey for confirming that you are a real person.
 							</p>
-							<p>Please hurry up, because the number of items on offer is limited!</p>
+							<p class="slide-left-anim" style="--anim-order: 7;">Please hurry up, because the number of items on
+								offer is limited!</p>
 						</div>
 
-						<div class="question-section__question">
+						<div class="question-section__question slide-left-anim" style="--anim-order: 8;">
 							<p>Question 1 of 3.</p>
 							<p class="highlighted">Have you ever used a Maxi-Cosi products?</p>
 						</div>
 
 						<div class="question-section__buttons">
-							<button class="question-button-left" type="button">YES</button>
-							<button class="question-button-right" type="button">no</button>
+							<button class="question-button-left scale-anim" style="--anim-order: 9;" type="button">
+								YES
+							</button>
+							<button class="question-button-right scale-anim" style="--anim-order: 10;" type="button">
+								no
+							</button>
 						</div>
 					</div>
 
 				</div>
 
-				<template id="loader">
-					<div class="loading __container">
-						<h2 class="loading__title">Ihre Antworten werden überprüft</h2>
 
-						<div class="loading__paragraphs">
+				<template id="loader">
+					<div class="loading __container fade-out-anim" style="--anim-order: 1;">
+						<h2 class="loading__title slide-left-anim" style="--anim-order: 3;">
+							Ihre Antworten werden überprüft
+						</h2>
+
+						<div class="loading__paragraphs slide-left-anim" style="--anim-order: 4;">
 							<p>Sie haben 3/3 der Fragen beantwortet!</p>
 							<p>Es gibt keine vorläufigen Erhebungen über Ihr IP</p>
 							<p>Geschenke werden geladen.</p>
@@ -150,7 +161,7 @@
 
 						<img class="loading__loader-img" src="./imgs/non-optimized/loader.png" alt="loader-img">
 
-						<p class="highlighted">Laden...</p>
+						<p class="highlighted slide-left-anim" style="--anim-order: 4;">Laden...</p>
 					</div>
 				</template>
 
